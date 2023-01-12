@@ -1,3 +1,16 @@
+/* Google Font: Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Global Css */
+
+:root {
+    --f-roboto: 'Roboto', sans-serif;
+    --primary-color: #562EFF;
+    --black-color: #000;
+    --light-gray: #D1D1D1;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -25,8 +38,15 @@ img {
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
-    color: #562EFF;
+    color: var(--primary-color);
+    margin-bottom: 30px;
 }
+
+/* Global Css Start */
+
+/* Top player And Blog Css Start */
+
+/* Top Player Css Start */
 
 .top_section {
     margin-top: 36px;
@@ -36,7 +56,6 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin-top: 40px;
 }
 
 .player {
@@ -55,10 +74,56 @@ img {
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
-    color: #000000;
+    color: var(--black-color);
 }
 
+/* Top player Css End */
+
 hr {
-    border-color: #D1D1D1;
+    border-color: var(--light-gray);
     margin: 30px 0;
 }
+
+/* Blog Css Start */
+
+.blog_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+}
+
+.blog {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.blog img {
+    max-width: 115px;
+}
+
+.blog h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    color: var(--black-color);
+
+}
+
+.blog h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--primary-color);
+}
+
+.blog h3 span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #9F9F9F;
+}
+
+/* Blog Css ENd */
+
+/* Top player And Blog Css End */
