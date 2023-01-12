@@ -217,6 +217,9 @@ hr {
     background: #FFE4E8;
     border-radius: 30px;
 }
+.course:nth-child(2) .duration {
+    background: #FEE5DF;
+}
 
 .duration img {
     width: 20px;
